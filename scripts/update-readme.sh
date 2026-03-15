@@ -2,8 +2,8 @@
 
 set -euo pipefail
 
-current_date="$(TZ=Asia/Tokyo date "+%Y/%m/%d")"
-art="$(printf '%s\n' "$current_date" | figlet -w 200)"
+timestamp="$(TZ=Asia/Tokyo date "+%Y/%m/%d %H:%M")"
+art="$(printf '%s\n' "$timestamp" | figlet -w 200)"
 
 {
   echo '```text'
