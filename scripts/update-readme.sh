@@ -12,11 +12,13 @@ set -euo pipefail
       fx = 0.1 + rand() * 0.5
       fy = 0.1 + rand() * 0.5
       phase = rand() * 6.283
-      cx = rand() * 72
-      cy = rand() * 20
-      for (y = 0; y < 20; y++) {
+      w = 84
+      h = 12
+      cx = rand() * w
+      cy = rand() * h
+      for (y = 0; y < h; y++) {
         line = ""
-        for (x = 0; x < 72; x++) {
+        for (x = 0; x < w; x++) {
           if (kind == 0) {
             line = line (rand() < 0.5 ? "/" : "\\")
             continue
