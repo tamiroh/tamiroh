@@ -13,7 +13,7 @@ set -euo pipefail
       fy = 0.1 + rand() * 0.5
       phase = rand() * 6.283
       w = 84
-      h = 12
+      h = 8
       cx = rand() * w
       cy = rand() * h
       for (y = 0; y < h; y++) {
