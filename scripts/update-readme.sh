@@ -3,7 +3,7 @@
 set -euo pipefail
 
 {
-  echo '```text'
+  echo '<pre>'
   awk -v seed="$((RANDOM * 32768 + RANDOM))" '
     BEGIN {
       srand(seed)
@@ -36,5 +36,5 @@ set -euo pipefail
       }
     }
   '
-  echo '```'
+  echo '</pre>'
 } > README.md
